@@ -12,15 +12,9 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          { loader: 'style-loader' },
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-            },
-          },
-          { loader: 'sass-loader' },
-        ],
+          'style-loader',
+          'css-loader'
+        ]
       },
      {
        test: /\.(png|svg|jpg|jpeg|gif)$/i,

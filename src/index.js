@@ -1,3 +1,4 @@
+import './style/style.css';
 import GetGif from "./GetGif";
 import GetWeather from "./GetWeather";
 import CreateCard from "./CreateCard";
