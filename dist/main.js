@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ GetWeather)\n/* harmony export */ });\n\r\nasync function GetWeather(city)\r\n{\r\n    if (!city) return;\r\n    try {\r\n        const response = await fetch('http://api.weatherapi.com/v1/current.json?key=cb3fb464a54f4aaf9cd32643231910&q=' + city)   \r\n        const data = await response.json();\r\n        console.log(data);\r\n        return data;\r\n    } catch(err) {\r\n        throw new Error(err);\r\n    }\r\n    \r\n}\n\n//# sourceURL=webpack://fetching_testing/./src/GetWeather.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ GetWeather)\n/* harmony export */ });\n\r\nasync function GetWeather(city)\r\n{\r\n    if (!city) return;\r\n    try {\r\n        const response = await fetch('https://api.weatherapi.com/v1/current.json?key=cb3fb464a54f4aaf9cd32643231910&q=' + city)   \r\n        const data = await response.json();\r\n        console.log(data);\r\n        return data;\r\n    } catch(err) {\r\n        throw new Error(err);\r\n    }\r\n    \r\n}\n\n//# sourceURL=webpack://fetching_testing/./src/GetWeather.js?");
 
 /***/ }),
 
